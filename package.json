@@ -1,27 +1,88 @@
 {
-  "name": "shipping-protection-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "webkit",
+  "version": "1.0.0",
+  "description": "🚀 Advanced Website Audit Platform - WebKit: Audit in seconds, monitor in real-time.",
+  "keywords": [
+    "audit",
+    "monitoring",
+    "performance",
+    "security",
+    "seo",
+    "accessibility",
+    "nextjs",
+    "typescript",
+    "tailwind"
+  ],
+  "author": {
+    "name": "WebKit Team",
+    "email": "team@webkit.dev",
+    "url": "https://webkit.dev"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/webkit.git"
+  },
+  "homepage": "https://webkit-demo.vercel.app",
+  "bugs": {
+    "url": "https://github.com/yourusername/webkit/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "postinstall": "drizzle-kit generate"
   },
   "dependencies": {
-    "next": "16.2.1",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-switch": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "critters": "^0.0.23",
+    "dotenv": "^17.3.1",
+    "drizzle-orm": "^0.33.0",
+    "lucide-react": "^0.460.0",
+    "next": "14.2.2",
+    "pg": "^8.11.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "resend": "^6.9.4",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.1",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@types/node": "^20.14.2",
+    "@types/pg": "^8.11.6",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "drizzle-kit": "^0.24.2",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.2",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.5.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
